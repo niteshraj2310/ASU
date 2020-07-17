@@ -1,4 +1,3 @@
-import requests
 
 def log(session,account):
 	s=session.post("https://mbasic.facebook.com/login",
