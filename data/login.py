@@ -7,7 +7,4 @@ def log(session,account):
 				"pass":account.split("|")[-1]
 			}
 	).url
-	if "save-device" in s or "m_sess" in s:
-		return True
-	else:
-		return False
+	return "save-device" in s or "m_sess" in s
